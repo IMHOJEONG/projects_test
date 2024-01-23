@@ -3,7 +3,7 @@ import { HttpResponse, http } from 'msw';
 export const handlers = [
     http.get('/test', () => {
         
-            return HttpResponse.text('test!');
+            return HttpResponse.error();
 
     }),
     http.get('/test1', () => {
